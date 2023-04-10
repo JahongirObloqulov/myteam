@@ -217,3 +217,35 @@ body {
     width: 62px;
     height: 62px;
 }
+
+/* Get Started section */
+#get-started {
+    background-color: #F67E7E;
+    background-image: url(../img/get-started-bg.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    padding: 76px 263px;
+}
+
+.get-started-title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: #012F34;
+    margin-right: 260px;
+}
+
+.get-started-btn {
+    padding: 10px 32px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #012F34;
+    border: 2px solid #012F34;
+    border-radius: 24px
+}
+
+.get-started-btn:hover {
+    background-color: #012F34;
+    color: #FFFFFF;
+}
