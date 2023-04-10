@@ -151,3 +151,69 @@ body {
     mix-blend-mode: normal;
     opacity: 0.8;
 }
+
+#stories {
+    padding: 140px 165px;
+    background-color: #004047;
+    background-image: url(../img/stories-left-top-bg.png), url(../img/stories-right-bottom-bg.png);
+    background-repeat: no-repeat;
+    background-position: left top, right bottom;
+}
+
+.stories-title {
+    width: 932px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.stories-title span {
+    color: #79C8C7;
+}
+
+.stories-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+}
+
+.stories-comment {
+    background-image: url(../img/comment-bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 36px 0 11px;
+}
+
+.comment-text {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.user-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #79C8C7;
+    margin-bottom: 2px;
+}
+
+.user-position {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+.stories-comment img {
+    width: 62px;
+    height: 62px;
+}
