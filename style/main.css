@@ -307,3 +307,41 @@ body {
     mix-blend-mode: normal;
     opacity: 0.6;
 }
+
+/*   About html   */
+
+#header-about {
+    background-color: #014E56;
+    height: 517px;
+    padding-top: 73px;
+    background-image: url(../img/header-about-right-bottom-bg.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.header-about-title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100px;
+    color: #FFFFFF;
+}
+
+.header-about-desc {
+    width: 730px;
+    height: 112px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.header-about-desc::before {
+    content: "";
+    width: 50px;
+    height: 4px;
+    position: absolute;
+    left: 17px;
+    top: -40px;
+    background-color: #F67E7E;
+}
