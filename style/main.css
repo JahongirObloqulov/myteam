@@ -8,17 +8,47 @@ body {
     font-family: 'Livvic', sans-serif;
 }
 
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.around {
+    justify-content: space-around;
+}
+
+.evenly {
+    justify-content: space-evenly;
+}
+
+.center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
 
 #header {
+    width: 100%;
     background-color: #014E56;
-    height: 700px;
-    padding-top: 73px;
+    padding: 73px 165px 0;
     background-image: url(../img/header-left-bg.png), url(../img/header-bottom-bg.png);
     background-repeat: no-repeat;
     background-position: center left, bottom right 100px;
 }
 
 .header-nav {
+    padding-top: 73px;
     margin-bottom: 129px;
 }
 
@@ -57,11 +87,10 @@ body {
 }
 
 .header-content {
-    margin-bottom: 250px;
+    padding-bottom: 250px;
 }
 
 .header-title {
-    width: 600px;
     font-weight: 700;
     font-size: 100px;
     line-height: 100px;
@@ -73,7 +102,6 @@ body {
 }
 
 .header-desc {
-    width: 445px;
     height: 195px;
     font-weight: 600;
     font-size: 18px;
@@ -93,7 +121,7 @@ body {
     background-color: #79C8C7;
 }
 
-#build {
+#build-section {
     padding: 140px 165px;
     background-color: #012F34;
     background-image: url(../img/build-bottom-bg.png);
@@ -101,15 +129,17 @@ body {
     background-position: right bottom;
 }
 
+.build {
+    padding: 0;
+    margin: 0;
+}
 
 .build-title {
-    width: 445px;
     font-weight: 700;
     font-size: 48px;
     line-height: 48px;
     color: #FFFFFF;
     position: relative;
-    margin-right: 105px;
 }
 
 .build-title::before {
@@ -122,8 +152,11 @@ body {
     background-color: #F67E7E;
 }
 
+.build-content {
+    width: 45%;
+}
+
 .build-item {
-    width: 540px;
     display: flex;
     margin-bottom: 32px;
 
@@ -160,7 +193,7 @@ body {
 }
 
 .stories-title {
-    width: 932px;
+    width: 100%;
     font-weight: 700;
     font-size: 48px;
     line-height: 48px;
@@ -181,7 +214,6 @@ body {
 }
 
 .stories-comment {
-    width: 350px;
     height: 266px;
     background-image: url(../img/comment-bg.png);
     background-repeat: no-repeat;
@@ -225,7 +257,7 @@ body {
     background-image: url(../img/get-started-bg.png);
     background-repeat: no-repeat;
     background-position: left bottom;
-    padding: 76px 263px;
+    padding: 76px 150px;
 }
 
 .get-started-title {
@@ -233,7 +265,6 @@ body {
     font-size: 48px;
     line-height: 48px;
     color: #012F34;
-    margin-right: 260px;
 }
 
 .get-started-btn {
@@ -258,7 +289,7 @@ body {
 }
 
 .footer-link {
-    padding-right: 125px;
+    padding-right: 50px;
 }
 
 .footer-link img {
@@ -277,7 +308,7 @@ body {
 }
 
 .footer-contact {
-    padding-right: 125px;
+    padding-right: 25px;
 }
 
 .footer-contact li {
@@ -303,28 +334,73 @@ body {
     font-weight: 600;
     font-size: 15px;
     line-height: 25px;
-    text-align: right;
     color: #FFFFFF;
     mix-blend-mode: normal;
     opacity: 0.6;
+    text-align: end;
 }
 
-/* RWD Media */
-@media only screen and (max-width:720px) {
-    .container {
-        width: 90%;
+/* RWD Media query */
+/* Large devices (desktops, less than 1200px)*/
+@media only screen and (max-width: 1199.98px) {
+    .footer-contact {
+        padding-right: 5px;
+    }
+}
+
+/* Medium devices (tablets, less than 992px)*/
+@media only screen and (max-width: 991.98px) {
+
+
+    .header-title {
+        text-align: center;
     }
 
-    header {
+    .header-desc {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-desc::before {
+        display: none;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media only screen and (max-width: 767.98px) {
+    #header {
+        width: 100%;
         background-color: #014E56;
-        background-image: url(../img/header-about-right-bottom-bg.png);
+        padding: 64px 39px 0;
+        background-image: url(../img/header-bottom-bg.png);
         background-repeat: no-repeat;
         background-position: bottom center;
     }
 
+    .header-nav {
+        padding-top: 0;
+        margin-bottom: 112px;
+    }
+
+    .header-logo img {
+        width: 128px;
+        height: 30px;
+    }
+
+    .header-nav-items {
+        column-gap: 40px;
+    }
+
     .header-content {
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .header-title {
+        padding: 0;
+        font-size: 64px;
+        line-height: 56px;
     }
 }
+
+/*X-Small devices (portrait phones, less than 576px)*/
+@media only screen and (max-width: 575.98px) {}
