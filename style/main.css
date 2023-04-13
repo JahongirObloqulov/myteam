@@ -390,15 +390,6 @@ body {
         width: 720px;
     }
 
-
-
-}
-
-@media screen and (max-width: 767px) {
-    .continer {
-        width: 540px;
-    }
-
     /* Find section */
     #find {
         background-image: url(../img/header-bottom-bg.png);
@@ -486,6 +477,22 @@ body {
         font-size: 32px;
         line-height: 32px;
     }
+}
+
+
+@media screen and (max-width: 768px) {
+    .continer {
+        width: 540px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .header-btn {
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 575px) {
