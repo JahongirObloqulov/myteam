@@ -9,8 +9,8 @@ body {
 }
 
 .container {
-    max-width: 1440px;
-    padding: 0 165px;
+    max-width: 1210px;
+    padding: 0 50px;
     margin: 0 auto;
 }
 
@@ -29,12 +29,17 @@ body {
     padding: 73px 0 129px;
 }
 
+.header-nav-item {
+    display: flex;
+    justify-content: space-between;
+}
+
 .header-logo {
-    width: 20%;
+    width: 45%;
 }
 
 .nav {
-    width: 20%;
+    width: 45%;
     float: left;
 }
 
@@ -85,7 +90,6 @@ body {
 
 .find-title {
     width: 50%;
-    height: 195px;
     font-weight: 700;
     font-size: 100px;
     line-height: 100px;
@@ -98,7 +102,6 @@ body {
 
 .find-desc {
     width: 50%;
-    height: 195px;
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
@@ -259,7 +262,7 @@ body {
     background-image: url(../img/get-started-bg.png);
     background-repeat: no-repeat;
     background-position: left bottom;
-    padding: 76px 150px;
+    padding: 76px 30px;
 }
 
 .get-started-content {
@@ -271,6 +274,7 @@ body {
 
 
 .get-started-title h1 {
+    padding-left: 100px;
     font-weight: 700;
     font-size: 48px;
     line-height: 48px;
@@ -369,66 +373,125 @@ body {
 }
 
 /* RWD Media query */
-/* Large devices (desktops, less than 1200px)*/
-@media only screen and (max-width: 1199.98px) {
-    .footer-contact {
-        padding-right: 5px;
+@media screen and (max-width:1200px) {
+    .container {
+        width: 1140px;
     }
 }
 
-/* Medium devices (tablets, less than 992px)*/
-@media only screen and (max-width: 991.98px) {
-
-
-    .header-title {
-        text-align: center;
-    }
-
-    .header-desc {
-        width: 100%;
-        text-align: center;
-    }
-
-    .header-desc::before {
-        display: none;
+@media screen and (max-width:1199px) {
+    .container {
+        width: 960px;
     }
 }
 
-/* Small devices (landscape phones, less than 768px)*/
-@media only screen and (max-width: 767.98px) {
-    #header {
-        width: 100%;
-        background-color: #014E56;
-        padding: 64px 39px 0;
+@media screen and (max-width:991px) {
+    .container {
+        width: 720px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 767px) {
+    .continer {
+        width: 540px;
+    }
+
+    /* Find section */
+    #find {
         background-image: url(../img/header-bottom-bg.png);
         background-repeat: no-repeat;
         background-position: bottom center;
     }
 
-    .header-nav {
-        padding-top: 0;
-        margin-bottom: 112px;
+    .find-content {
+        flex-wrap: wrap;
     }
 
-    .header-logo img {
-        width: 128px;
-        height: 30px;
-    }
-
-    .header-nav-items {
-        column-gap: 40px;
-    }
-
-    .header-content {
+    .find-title {
+        width: 64%;
         margin: 0 auto;
-    }
-
-    .header-title {
-        padding: 0;
         font-size: 64px;
         line-height: 56px;
+        text-align: center;
+    }
+
+    .find-desc {
+        width: 76%;
+        margin: 0 auto;
+        font-size: 15px;
+        line-height: 28px;
+        text-align: center;
+        padding-top: 24px;
+    }
+
+    .find-desc::before {
+        display: none;
+    }
+
+    /* Build section */
+    .build {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .build-title {
+        width: 100%;
+        height: 65px;
+        font-size: 32px;
+        line-height: 32px;
+        top: 0;
+        margin-bottom: 64px;
+
+    }
+
+    .build-content {
+        width: 100%;
+    }
+
+    /* Stories  section */
+    #stories {
+        padding-bottom: 0;
+    }
+
+    .stories-title {
+        width: 79%;
+        margin: 0 auto;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 48px;
+    }
+
+    .stories-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .stories-comment {
+        width: 75%;
+        margin-bottom: 48px;
+    }
+
+    .stories-content .stories-comment:nth-child(3) {
+        margin-bottom: 100px;
+    }
+
+    /* Get-started  section */
+    .get-started-title h1 {
+        padding-left: 2rem;
+        font-size: 32px;
+        line-height: 32px;
     }
 }
 
-/*X-Small devices (portrait phones, less than 576px)*/
-@media only screen and (max-width: 575.98px) {}
+@media screen and (max-width: 575px) {
+    .continer {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+}
