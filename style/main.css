@@ -75,6 +75,10 @@ body {
     color: #002529;
 }
 
+.toggle {
+    display: none;
+}
+
 #find {
     background-color: #014E56;
     background-image: url(../img/header-left-bg.png), url(../img/header-bottom-bg.png);
@@ -493,6 +497,9 @@ body {
         display: none;
     }
 
+    .toggle {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 575px) {
