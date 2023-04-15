@@ -289,3 +289,144 @@ body {
 }
 
 /* Header sectioni yakullandi*/
+
+/* Build section */
+
+#build-section {
+    background-color: #012F34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/build-bottom-bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+@media screen and (max-width: 770px) {
+    #build-section {
+        background-position: top right;
+        background-size: 80px;
+    }
+}
+
+.build {
+    display: flex;
+    padding: 120px 165px 140px;
+}
+
+@media screen and (max-width: 1130px) {
+    .build {
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 1050px) {
+    .build {
+        flex-direction: column;
+        justify-content: center;
+
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .build {
+        padding: 120px 105px 100px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .build {
+        padding: 50px 15px 100px;
+    }
+}
+
+.build-title {
+    flex: 0 0 40%;
+}
+
+@media screen and (max-width: 560px) {
+    .build-title {
+        padding-right: 50px;
+    }
+}
+
+.build-line {
+    width: 50px;
+    height: 4px;
+    background-color: #F67E7E;
+    margin: 20px 0;
+}
+
+.build-title h2 {
+    font-size: 48px;
+    line-height: 48px;
+    margin-top: 55px;
+}
+
+@media screen and (max-width: 770px) {
+    .build-title h2 {
+        font-size: 32px;
+        line-height: 32px;
+    }
+}
+
+.build-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 125px;
+}
+
+@media screen and (max-width: 1050px) {
+    .build-content {
+        margin-left: 0;
+    }
+}
+
+.build-content .build-item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.build-content .build-item:nth-child(1) {
+    margin-top: 72px;
+}
+
+.build-content .build-item:nth-child(2),
+.build-content .build-item:nth-child(3) {
+    margin-top: 27px;
+}
+
+
+@media screen and (max-width: 560px) {
+    .build-content .build-item {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.build-item-img {
+    margin: 5.5px 20px 0 7.5px;
+}
+
+
+
+.build-item-content {
+    margin-left: 3.7px;
+}
+
+.build-item-content h3 {
+    font-size: 18px;
+    color: #F67E7E;
+    margin: 5.5px 0;
+}
+
+.build-item-content p {
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFF;
+    margin-top: 16px;
+}
