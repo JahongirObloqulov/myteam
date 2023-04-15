@@ -369,6 +369,7 @@ body {
     .build-title h2 {
         font-size: 32px;
         line-height: 32px;
+        font-weight: 600;
     }
 }
 
@@ -421,6 +422,7 @@ body {
 
 .build-item-content h3 {
     font-size: 18px;
+    font-weight: 700;
     color: #F67E7E;
     margin: 5.5px 0;
 }
@@ -430,4 +432,137 @@ body {
     line-height: 25px;
     color: #FFF;
     margin-top: 16px;
+}
+
+/* Build sectioni yakullandi */
+#stories {
+    background-color: #004047;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/stories-left-top-bg.png), url(../img/stories-right-bottom-bg.png);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+}
+
+.stories-section {
+    text-align: center;
+    padding: 140px 160px 144px;
+
+}
+
+@media screen and (max-width: 1130px) {
+    .stories .wrapper {
+        padding: 120px 100px 0 100px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .stories .wrapper {
+        padding: 120px 15px 0 15px;
+    }
+}
+
+.stories-title {
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 700;
+    color: #fff;
+}
+
+@media screen and (max-width: 1050px) {
+    .stories-title {
+        font-size: 44px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .stories-title {
+        font-size: 32px;
+    }
+}
+
+.stories-title span {
+    color: #79C8C7;
+}
+
+.stories-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 92.5px;
+}
+
+@media screen and (max-width: 1050px) {
+    .stories-content {
+        flex-wrap: wrap;
+        padding: 90px 100px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .stories-content {
+        padding: 90px 0;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .stories-content {
+        margin-right: 0;
+        padding: 90px 0 70px;
+    }
+}
+
+
+.stories-comment {
+    background-image: url(../img/comment-bg.png);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+@media screen and (max-width: 1050px) {
+    .stories-comment {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .stories-comment {
+        margin-bottom: 30px;
+    }
+}
+
+.stories-content .stories-comment:nth-child(1),
+.stories-content .stories-comment:nth-child(2) {
+    margin-right: 40px;
+}
+
+.comment-text {
+    font-size: 15px;
+    line-height: 25px;
+    color: #fff;
+    padding-top: 36px;
+}
+
+.user-name {
+    font-size: 18px;
+    line-height: 28px;
+    color: #79C8C7;
+    margin-top: 24px;
+}
+
+.user-position {
+    font-size: 12.7px;
+    line-height: 18px;
+    color: #FFF;
+    margin: 2.5px 0 10px 2px;
+}
+
+.stories-comment img {
+    display: block;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    border: 2px solid #C4FFFE;
+    margin: 20px auto;
 }
