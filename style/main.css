@@ -513,7 +513,6 @@ body {
     }
 }
 
-
 .stories-comment {
     background-image: url(../img/comment-bg.png);
     background-repeat: no-repeat;
@@ -565,4 +564,96 @@ body {
     border-radius: 50%;
     border: 2px solid #C4FFFE;
     margin: 20px auto;
+}
+
+/* Stories sectioni yakullandi */
+
+/* Get started sectioni */
+#get-started {
+    background-color: #F67E7E;
+    display: flex;
+    background-image: url(../img/get-started-bg.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.get-started-content {
+    display: flex;
+    margin: auto;
+    padding: 76px 0 75px 4px;
+    align-items: center;
+}
+
+@media screen and (max-width: 1050px) {
+    .get-started-content {
+        padding: 80px 0 80px 4px;
+    }
+
+}
+
+@media screen and (max-width: 770px) {
+    .get-started-content {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .get-started-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.get-started-title {
+    font-size: 48px;
+    line-height: 48px;
+    color: #012F34;
+    margin-right: 260px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1050px) {
+    .get-started-title {
+        margin-right: 100px;
+        font-size: 44px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .get-started-title {
+        font-size: 32px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .get-started-title {
+        font-size: 32px;
+        margin-bottom: 40px;
+        margin-right: 0;
+        text-align: center;
+    }
+}
+
+.get-started-btn {
+    border: 2px solid #012F34;
+    border-radius: 24px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #012F34;
+    padding: 11px 30.5px;
+    cursor: pointer;
+}
+
+.get-started-btn:hover {
+    background-color: #012F34;
+    color: #fff;
+}
+
+@media screen and (max-width: 770px) {
+    .get-started-btn {
+        padding: 8px 21px;
+    }
 }
