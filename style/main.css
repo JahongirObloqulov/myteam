@@ -452,13 +452,13 @@ body {
 }
 
 @media screen and (max-width: 1130px) {
-    .stories .wrapper {
+    .stories-section {
         padding: 120px 100px 0 100px;
     }
 }
 
 @media screen and (max-width: 560px) {
-    .stories .wrapper {
+    .stories-section {
         padding: 120px 15px 0 15px;
     }
 }
