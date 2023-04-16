@@ -13,8 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./style/reset.css">
-    <link rel="stylesheet" href="./style/col.css">
-    <link rel="stylesheet" href="./style/about.css">
+    <link rel="stylesheet" href="./style/contact.css">
     <title>About</title>
 </head>
 
@@ -28,28 +27,122 @@
                     <i class='bx bx-menu' style='color:#ffffff' id="open"></i>
                     <i class='bx bx-x' style='color:#ffffff' id="close"></i>
                 </label>
-                <div class="nav">
-
-                    <a class="nav-link" href="index.html">home</a>
-
-
-                    <a class="nav-link" href="about.html">about</a>
-
-
-                    <a class="header-btn" href="contact.html">contact us</a>
-                </div>
-                <!-- <ul class="nav-list">
+                <ul class="nav-list">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">about</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="contact.html">contact us</a>
+                    </li>
                 </ul>
-                <a class="header-btn" href="contact.html">contact us</a> -->
+                <a class="header-btn" href="contact.html">contact us</a>
             </nav>
         </header>
+        <section id="contact">
+            <div class="ask">
+                <h1 class="ask-title">Contact</h1>
+                <div class="ask-about">
+                    <h2 class="ask-about-title">Ask us about</h2>
+                    <ul class="ask-list">
+                        <li class="ask-item">
+                            <img src="./img/build-img-1.svg" alt="icon" class="ask-icon">
+                            <p class="ask-desc">The quality of our talent network</p>
+                        </li>
+                        <li class="ask-item">
+                            <img src="./img/build-img-2.svg" alt="icon" class="ask-icon">
+                            <p class="ask-desc">Usage and implementation of our software</p>
+                        </li>
+                        <li class="ask-item">
+                            <img src="./img/build-img-3.svg" alt="icon" class="ask-icon">
+                            <p class="ask-desc">How we help drive innovation</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form action="" class="form">
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" class="form-input" placeholder="Name" required>
+                        <label for="name" class="form-label">Name</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" class="form-input" placeholder="Email Address"
+                            required>
+                        <label for="email" class="form-label">Email Address</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="company-name" id="company-name" class="form-input"
+                            placeholder="Company name">
+                        <label for="company-name" class="form-label">Company name</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="title" id="title" class="form-input" placeholder="Title"
+                            autocomplete="off">
+                        <label for="title" class="form-label">Title</label>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea type="text" name="message" id="message" rows="3" spellcheck="true" class="form-input"
+                            placeholder="Message" required></textarea>
+                        <label for="message" class="form-label">Message</label>
+                    </div>
+
+                    <button class="contact-btn">Submit</button>
+                </form>
+            </div>
+        </section>
+        <footer id="footer-section">
+            <div class="footer">
+                <div class="footer-info">
+                    <div class="footer-contact">
+                        <div>
+                            <img src="./img/myteam.svg" alt="logo">
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="index.html">home</a>
+                            </li>
+                            <li>
+                                <a href="about.html">about</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-adress">
+                        <ul>
+                            <li>987 Hillcrest Lane</li>
+                            <li>Irvine, CA</li>
+                            <li>California 92714</li>
+                            <li>Call Us : 949-833-7432</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="footer-social">
+                    <ul>
+                        <li>
+                            <a href="#!"><img src="./img/facebook.svg" alt="facebook"></a>
+                        </li>
+                        <li>
+                            <a href="#!"><img src="./img/pinterest.svg" alt="pinterest"></a>
+                        </li>
+                        <li>
+                            <a href="#!"><img src="./img/twitter.svg" alt="twitter"></a>
+                        </li>
+                    </ul>
+                    <p class="copy-right">Copyright 2020. All Rights Reserved</p>
+                </div>
+            </div>
+        </footer>
     </div>
+
+
 </body>
 
 </html>

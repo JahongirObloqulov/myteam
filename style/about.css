@@ -600,7 +600,6 @@ label #close {
 
 @media screen and (max-width: 1050px) {
     .clients-list {
-        /* flex-wrap: wrap; */
         justify-content: center;
     }
 }
@@ -641,12 +640,6 @@ label #close {
         margin: 50px 20px 0;
     }
 }
-
-
-
-
-
-
 
 /* Get started sectioni */
 #get-started {
