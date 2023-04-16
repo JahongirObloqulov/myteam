@@ -1136,9 +1136,17 @@ label #iks-6 {
     align-items: center;
 }
 
+
 .footer-social ul a {
-    font-size: 25px;
+    font-size: 2.5rem;
     color: #FFF;
+    text-decoration: none;
+    transition: all 0.3s;
+
+}
+
+.footer-social ul a:hover {
+    color: #F67E7E;
 }
 
 @media screen and (max-width: 560px) {

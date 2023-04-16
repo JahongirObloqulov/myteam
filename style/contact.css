@@ -109,7 +109,7 @@ body {
     font-size: 18px;
     line-height: 28px;
     color: #fff;
-    padding: 11px 30px;
+    padding: 8px 30px;
     border: 2px solid #fff;
     border-radius: 25px;
 }
@@ -325,8 +325,8 @@ label #close {
     margin-bottom: 10px;
 }
 
-.contact .ask-item:not(:last-child) {
-    margin-bottom: 10px;
+.contact .ask-item:last-child {
+    margin-bottom: 0;
 }
 
 @media screen and (max-width: 850px) {
@@ -357,7 +357,7 @@ label #close {
     margin-bottom: 15px;
 }
 
-.form__group:last-child {
+.form-group:last-child {
     margin-bottom: 0;
 }
 
@@ -371,6 +371,27 @@ label #close {
     border-bottom: 1px solid #79C8C7;
     transition: all 0.3s;
     margin: 0 auto;
+    color: #fff;
+}
+
+/* .form-input:required {
+    border-bottom: 2px solid #F67E7E;
+} */
+
+.form-input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #7ed56f;
+    /* color: #fff; */
+}
+
+.form-input:focus:invalid {
+    border-bottom: 3px solid #ff7730;
+    color: #F67E7E;
+}
+
+.form-input::placeholder {
+    color: #79C8C7;
 }
 
 #message {
@@ -570,8 +591,15 @@ label #close {
 }
 
 .footer-social ul a {
-    font-size: 25px;
+    font-size: 2.5rem;
     color: #FFF;
+    text-decoration: none;
+    transition: all 0.3s;
+
+}
+
+.footer-social ul a:hover {
+    color: #F67E7E;
 }
 
 @media screen and (max-width: 560px) {
