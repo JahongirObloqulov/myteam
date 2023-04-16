@@ -495,7 +495,9 @@ label #close {
     color: #FFF;
 }
 
-label #plus {
+/*animatsiya qismi*/
+/*1-card*/
+label #plus-1 {
     position: absolute;
     font-size: 35px;
     font-weight: 700;
@@ -508,7 +510,7 @@ label #plus {
 
 }
 
-label #iks {
+label #iks-1 {
     position: absolute;
     font-size: 35px;
     font-weight: 700;
@@ -520,27 +522,264 @@ label #iks {
     transition: .5s;
 }
 
-#card-btn {
+#card-btn-1 {
     display: none;
 }
 
-#card-btn:checked~label {
+#card-btn-1:checked~label {
     background-color: #79C8C7;
 }
 
-#card-btn:checked~label #iks {
+#card-btn-1:checked~label #iks-1 {
     display: inline-block;
 }
 
-#card-btn:checked~label #plus {
+#card-btn-1:checked~label #plus-1 {
     display: none;
 }
 
-#card-btn:checked~.directors-card-front {
+#card-btn-1:checked~.directors-card-front {
     transform: rotateX(150deg);
     transition: .3s;
 }
 
+/*2-card*/
+label #plus-2 {
+    position: absolute;
+    font-size: 35px;
+    font-weight: 700;
+    top: 52%;
+    right: 10px;
+    transform: translate(0, -52%);
+    cursor: pointer;
+    transition: .5s;
+
+
+}
+
+label #iks-2 {
+    position: absolute;
+    font-size: 35px;
+    font-weight: 700;
+    top: 52%;
+    right: 10px;
+    transform: translate(0, -52%);
+    display: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#card-btn-2 {
+    display: none;
+}
+
+#card-btn-2:checked~label {
+    background-color: #79C8C7;
+}
+
+#card-btn-2:checked~label #iks-2 {
+    display: inline-block;
+}
+
+#card-btn-2:checked~label #plus-2 {
+    display: none;
+}
+
+#card-btn-2:checked~.directors-card-front {
+    transform: rotateX(150deg);
+    transition: .3s;
+}
+
+/*3-card*/
+label #plus-3 {
+    position: absolute;
+    font-size: 35px;
+    font-weight: 700;
+    top: 52%;
+    right: 10px;
+    transform: translate(0, -52%);
+    cursor: pointer;
+    transition: .5s;
+
+
+}
+
+label #iks-3 {
+    position: absolute;
+    font-size: 35px;
+    font-weight: 700;
+    top: 52%;
+    right: 10px;
+    transform: translate(0, -52%);
+    display: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#card-btn-3 {
+    display: none;
+}
+
+#card-btn-3:checked~label {
+    background-color: #79C8C7;
+}
+
+#card-btn-3:checked~label #iks-3 {
+    display: inline-block;
+}
+
+#card-btn-3:checked~label #plus-3 {
+    display: none;
+}
+
+#card-btn-3:checked~.directors-card-front {
+    transform: rotateX(150deg);
+    transition: .3s;
+}
+
+/*4-card*/
+label #plus-4 {
+    position: absolute;
+    font-size: 35px;
+    font-weight: 700;
+    top: 52%;
+    right: 10px;
+    transform: translate(0, -52%);
+    cursor: pointer;
+    transition: .5s;
+
+
+}
+
+label #iks-4 {
+    position: absolute;
+    font-size: 35px;
+    font-weight: 700;
+    top: 52%;
+    right: 10px;
+    transform: translate(0, -52%);
+    display: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#card-btn-4 {
+    display: none;
+}
+
+#card-btn-4:checked~label {
+    background-color: #79C8C7;
+}
+
+#card-btn-4:checked~label #iks-4 {
+    display: inline-block;
+}
+
+#card-btn-4:checked~label #plus-4 {
+    display: none;
+}
+
+#card-btn-4:checked~.directors-card-front {
+    transform: rotateX(150deg);
+    transition: .3s;
+}
+
+/*5-card*/
+label #plus-5 {
+    position: absolute;
+    font-size: 35px;
+    font-weight: 700;
+    top: 52%;
+    right: 10px;
+    transform: translate(0, -52%);
+    cursor: pointer;
+    transition: .5s;
+
+
+}
+
+label #iks-5 {
+    position: absolute;
+    font-size: 35px;
+    font-weight: 700;
+    top: 52%;
+    right: 10px;
+    transform: translate(0, -52%);
+    display: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#card-btn-5 {
+    display: none;
+}
+
+#card-btn-5:checked~label {
+    background-color: #79C8C7;
+}
+
+#card-btn-5:checked~label #iks-5 {
+    display: inline-block;
+}
+
+#card-btn-5:checked~label #plus-5 {
+    display: none;
+}
+
+#card-btn-5:checked~.directors-card-front {
+    transform: rotateX(150deg);
+    transition: .3s;
+}
+
+/*6-card*/
+label #plus-6 {
+    position: absolute;
+    font-size: 35px;
+    font-weight: 700;
+    top: 52%;
+    right: 10px;
+    transform: translate(0, -52%);
+    cursor: pointer;
+    transition: .5s;
+
+
+}
+
+label #iks-6 {
+    position: absolute;
+    font-size: 35px;
+    font-weight: 700;
+    top: 52%;
+    right: 10px;
+    transform: translate(0, -52%);
+    display: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#card-btn-6 {
+    display: none;
+}
+
+#card-btn-6:checked~label {
+    background-color: #79C8C7;
+}
+
+#card-btn-6:checked~label #iks-6 {
+    display: inline-block;
+}
+
+#card-btn-6:checked~label #plus-6 {
+    display: none;
+}
+
+#card-btn-6:checked~.directors-card-front {
+    transform: rotateX(150deg);
+    transition: .3s;
+}
+
+
+/*------------*/
 .directors-card label {
     position: absolute;
     width: 56px;
@@ -554,18 +793,7 @@ label #iks {
     z-index: 120;
 }
 
-.directors-card label span {
-    position: absolute;
-    width: 4px;
-    height: 16px;
-    left: 26px;
-    top: 20px;
-    background: #012F34;
-}
-
-.directors-card label span:last-child {
-    transform: rotate(90deg);
-}
+/*animatsiya yakuni*/
 
 /* Directors sectioni yakullandi */
 /* Clients sectioni */
