@@ -405,6 +405,10 @@ label #close {
 
 }
 
+.contact-btn:hover {
+    background-color: #79C8C7;
+}
+
 @media screen and (max-width: 1050px) {
     .contact-btn {
         padding: 11px 35px;
