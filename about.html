@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/col.css">
     <link rel="stylesheet" href="./style/about.css">
@@ -18,24 +19,251 @@
 </head>
 
 <body>
-
-    <main>
-        <section id="get-started">
-            <div class="container">
-                <div class="row center align-center">
-                    <h1 class="get-started-title">Ready to get started?</h1>
-                    <a href="contact.html" class="get-started-btn">contact us</a>
+    <div class="container">
+        <header id="header">
+            <nav class="header-nav">
+                <a href="#!"><img class="logo" src="./img/myteam.svg" alt="Myteam logo"></a>
+                <input type="checkbox" name="check" id="check">
+                <label for="check">
+                    <i class='bx bx-menu' style='color:#ffffff' id="open"></i>
+                    <i class='bx bx-x' style='color:#ffffff' id="close"></i>
+                </label>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html">contact us</a>
+                    </li>
+                </ul>
+                <a class="header-btn" href="contact.html">contact us</a>
+            </nav>
+            <div class="header-content">
+                <div class="header-title">
+                    <h1>
+                        About
+                    </h1>
                 </div>
+
+                <div class="header-desc">
+                    <div class="line"></div>
+                    <p>
+                        We help companies build dynamic teams made up of top global talent. Using our network of
+                        passionate professionals we drive innovation and deliver incredible outcomes. Talented, diverse
+                        teams shape the best products and experiences. We'll bring those teams to you.
+                    </p>
+                </div>
+
             </div>
-        </section>
-    </main>
-    <footer id="footer">
-        <div class="container">
-            <div class="row between">
-                <div class="footer-info row">
-                    <div class="footer-link">
-                        <img src="./img/myteam.svg" alt="logo">
-                        <ul class="row between">
+        </header>
+
+        <main>
+            <section id="directors-section">
+                <div class="directors">
+                    <h2 class="directors-title">Meet the directors</h2>
+                    <div class="directors-cards">
+                        <div class="directors-card">
+                            <div class="directors-card-front">
+                                <img src="./img/nikita.png" alt="Nikita Marks">
+                                <h4 class="directors-name">Nikita Marks</h4>
+                                <p class="directors-position">Founder & CEO</p>
+                            </div>
+                            <div class="directors-card-back">
+                                <h4 class="directors-name">Nikita Marks</h4>
+                                <p class="card-desc">
+                                    “It always amazes me how much talent there is in every corner of
+                                    the globe.”
+                                </p>
+                                <div class="card-social-icons">
+                                    <a href="#!" target="_blank" class="icons">
+                                        <img src="./img/twitter.svg" alt="twitter">
+                                    </a>
+                                    <a href="#!" target="_blank" class="icons">
+                                        <img src="./img/linkedin.svg" alt="linkedin">
+                                    </a>
+                                </div>
+                            </div>
+                            <input type="checkbox" name="" id="card-btn">
+                            <label for="card-btn">
+                                <span></span>
+                                <span></span>
+                            </label>
+                        </div>
+                        <div class="directors-card">
+                            <div class="directors-card-front">
+                                <img src="./img/cristian.png" alt="Cristian Duncan">
+                                <h4 class="directors-name">Cristian Duncan</h4>
+                                <p class="directors-position">Co-founder & COO</p>
+                            </div>
+                            <div class="directors-card-back">
+                                <h4 class="directors-name">Cristian Duncan</h4>
+                                <p class="card-desc">
+                                    “Distributed teams required unique processes. You need to approach work in a new
+                                    way.”
+                                </p>
+                                <div class="card-social-icons">
+                                    <a href="#!" target="_blank" class="icons">
+                                        <img src="./img/twitter.svg" alt="twitter">
+                                    </a>
+                                    <a href="#!" target="_blank" class="icons">
+                                        <img src="./img/linkedin.svg" alt="linkedin">
+                                    </a>
+                                </div>
+                            </div>
+                            <input type="checkbox" name="" id="card-btn">
+                            <label for="card-btn">
+                                <span></span>
+                                <span></span>
+                            </label>
+
+                        </div>
+                        <div class="directors-card">
+                            <div class="directors-card-front">
+                                <img src="./img/cruz.png" alt="Cruz Hamer">
+                                <h4 class="directors-name">Cruz Hamer</h4>
+                                <p class="directors-position">Co-founder & CTO</p>
+                            </div>
+                            <div class="directors-card-back">
+                                <h4 class="directors-name">Cruz Hamer</h4>
+                                <p class="card-desc">
+                                    “Technology is at the forefront of enabling distributed teams. That's where we come
+                                    in.”
+                                </p>
+                                <div class="card-social-icons">
+                                    <a href="#!" target="_blank" class="icons">
+                                        <img src="./img/twitter.svg" alt="twitter">
+                                    </a>
+                                    <a href="#!" target="_blank" class="icons">
+                                        <img src="./img/linkedin.svg" alt="linkedin">
+                                    </a>
+                                </div>
+                            </div>
+                            <input type="checkbox" name="" id="card-btn">
+                            <label for="card-btn">
+                                <span></span>
+                                <span></span>
+                            </label>
+
+                        </div>
+                        <div class="directors-card">
+                            <div class="directors-card-front">
+                                <img src="./img/drake.png" alt="Drake Heaton">
+                                <h4 class="directors-name">Drake Heaton</h4>
+                                <p class="directors-position">Business Development Lead</p>
+                            </div>
+                            <div class="directors-card-back">
+                                <h4 class="directors-name">Drake Heaton</h4>
+                                <p class="card-desc">
+                                    “Hiring similar people from similar backgrounds is a surefire way to stunt
+                                    innovation.”
+                                </p>
+                                <div class="card-social-icons">
+                                    <a href="#!" target="_blank" class="icons">
+                                        <img src="./img/twitter.svg" alt="twitter">
+                                    </a>
+                                    <a href="#!" target="_blank" class="icons">
+                                        <img src="./img/linkedin.svg" alt="linkedin">
+                                    </a>
+                                </div>
+                            </div>
+                            <input type="checkbox" name="" id="card-btn">
+                            <label for="card-btn">
+                                <span></span>
+                                <span></span>
+                            </label>
+
+                        </div>
+                        <div class="directors-card">
+                            <div class="directors-card-front">
+                                <img src="./img/griffin.png" alt="Griffin Wise">
+                                <h4 class="directors-name">Griffin Wise</h4>
+                                <p class="directors-position">Lead Marketing</p>
+                            </div>
+                            <div class="directors-card-back">
+                                <h4 class="directors-name">Griffin Wise</h4>
+                                <p class="card-desc">
+                                    “Unique perspectives shape unique products, which is what you need
+                                    to survive these days.”
+                                </p>
+                                <div class="card-social-icons">
+                                    <a href="#!" target="_blank" class="icons">
+                                        <img src="./img/twitter.svg" alt="twitter">
+                                    </a>
+                                    <a href="#!" target="_blank" class="icons">
+                                        <img src="./img/linkedin.svg" alt="linkedin">
+                                    </a>
+                                </div>
+                            </div>
+                            <input type="checkbox" name="" id="card-btn">
+                            <label for="card-btn">
+                                <span></span>
+                                <span></span>
+                            </label>
+
+                        </div>
+                        <div class="directors-card">
+                            <div class="directors-card-front">
+                                <img src="./img/nikita.png" alt="Aden Allan">
+                                <h4 class="directors-name">Aden Allan</h4>
+                                <p class="directors-position">Head of Talent</p>
+                            </div>
+                            <div class="directors-card-back">
+                                <h4 class="directors-name">Aden Allan</h4>
+                                <p class="card-desc">
+                                    “Empowered teams create truly amazing products. Set the north star and let them
+                                    follow it.”
+                                </p>
+                                <div class="card-social-icons">
+                                    <a href="#!" target="_blank" class="icons">
+                                        <img src="./img/twitter.svg" alt="twitter">
+                                    </a>
+                                    <a href="#!" target="_blank" class="icons">
+                                        <img src="./img/linkedin.svg" alt="linkedin">
+                                    </a>
+                                </div>
+                            </div>
+                            <input type="checkbox" name="" id="">
+                            <input type="checkbox" name="" id="card-btn">
+                            <label for="card-btn">
+                                <span></span>
+                                <span></span>
+                            </label>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section id="clients">
+                <div class="clients-content">
+                    <h4 class="clients-title">Some of our clients</h4>
+                    <div class="clients-list">
+                        <img src="../img/logo-the-verge.png" alt="The Verge" class="clients-logo">
+                        <img src="../img/logo-jakarta-post.png" alt="Jakarta Post" class="clients-logo">
+                        <img src="../img/logo-the-guardian.png" alt="The Guardian" class="clients-logo">
+                        <img src="../img/logo-tech-radar.png" alt="Tech Radar" class="clients-logo">
+                        <img src="../img/logo-gadgets-now.png" alt="Gadgets Now" class="clients-logo-">
+                    </div>
+                </div>
+            </section>
+            <section id="get-started">
+                <div class="get-started-content">
+                    <h1 class="get-started-title">Ready to get started?</h1>
+                    <a class="get-started-btn" href="contact.html">contact us</a>
+                </div>
+            </section>
+        </main>
+        <footer id="footer-section">
+            <div class="footer">
+                <div class="footer-info">
+                    <div class="footer-contact">
+                        <div>
+                            <img src="./img/myteam.svg" alt="logo">
+                        </div>
+                        <ul>
                             <li>
                                 <a href="index.html">home</a>
                             </li>
@@ -44,7 +272,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="footer-contact">
+                    <div class="footer-adress">
                         <ul>
                             <li>987 Hillcrest Lane</li>
                             <li>Irvine, CA</li>
@@ -55,7 +283,7 @@
 
                 </div>
                 <div class="footer-social">
-                    <ul class="row">
+                    <ul>
                         <li>
                             <a href="#!"><img src="./img/facebook.svg" alt="facebook"></a>
                         </li>
@@ -66,11 +294,11 @@
                             <a href="#!"><img src="./img/twitter.svg" alt="twitter"></a>
                         </li>
                     </ul>
-                    <span class="copy-right">Copyright 2020. All Rights Reserved</span>
+                    <p class="copy-right">Copyright 2020. All Rights Reserved</p>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
 
 </body>
