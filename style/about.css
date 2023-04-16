@@ -394,6 +394,7 @@ label #close {
     align-items: center;
     padding-top: 65px;
     padding-bottom: 167px;
+
 }
 
 .directors-card {
@@ -406,6 +407,7 @@ label #close {
     margin-bottom: 48px;
     position: relative;
     perspective: 1500px;
+    transform-style: preserve-3d;
 }
 
 @media screen and (max-width: 770px) {
@@ -476,8 +478,9 @@ label #close {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 40px;
+    padding: 45px;
 }
+
 
 .card-desc {
     font-size: 15px;
@@ -492,29 +495,63 @@ label #close {
     color: #FFF;
 }
 
+label #plus {
+    position: absolute;
+    font-size: 35px;
+    font-weight: 700;
+    top: 52%;
+    right: 10px;
+    transform: translate(0, -52%);
+    cursor: pointer;
+    transition: .5s;
 
-.directors-card input[type=checkbox] {
+
+}
+
+label #iks {
+    position: absolute;
+    font-size: 35px;
+    font-weight: 700;
+    top: 52%;
+    right: 10px;
+    transform: translate(0, -52%);
+    display: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#card-btn {
     display: none;
 }
 
-.directors-card input[type=checkbox]:checked .directors-card label {
+#card-btn:checked~label {
     background-color: #79C8C7;
 }
 
+#card-btn:checked~label #iks {
+    display: inline-block;
+}
+
+#card-btn:checked~label #plus {
+    display: none;
+}
+
+#card-btn:checked~.directors-card-front {
+    transform: rotateX(150deg);
+    transition: .3s;
+}
+
 .directors-card label {
-    display: block;
     position: absolute;
     width: 56px;
     height: 56px;
     background-color: #F67E7E;
-    /* background-image: url("../img/plus.svg"); */
-    background-repeat: no-repeat;
-    background-position: center;
     border-radius: 50%;
     bottom: -24px;
     left: 40%;
     cursor: pointer;
     transition: all 0.5s;
+    z-index: 120;
 }
 
 .directors-card label span {
